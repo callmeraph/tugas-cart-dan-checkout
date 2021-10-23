@@ -1,0 +1,282 @@
+<style>
+    body {
+        padding: 0px;
+        margin: 0px;
+        background-color: rgb(240, 240, 240);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    span {
+        font-size: 12px;
+        opacity: .8;
+    }
+    
+    .check {
+        font-size: 14px;
+        color: rgb(149, 0, 194);
+    }
+    
+    .cart {
+        display: flex;
+        align-items: center;
+    }
+    
+    .carts {
+        margin-right: 10px;
+    }
+    
+    .qty {
+        width: 50px;
+    }
+    
+    .item {
+        width: 800px;
+        margin: auto;
+    }
+    
+    .head {
+        background-color: rgb(149, 0, 194);
+        color: white;
+    }
+</style>
+</head>
+
+</html>
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pembelian</title>
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(149, 0, 194);
+            padding: 10px;
+            align-items: center;
+            color: white;
+        }
+        
+        .link a {
+            font-weight: 600;
+        }
+        
+        .ancor {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+            float: left;
+            padding: 20px;
+        }
+        
+        ul {
+            overflow: hidden;
+        }
+        
+        li {
+            list-style: none;
+            padding: 10px;
+        }
+        
+        li a:hover {
+            background-color: rgb(105, 8, 134);
+        }
+        
+        table {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .side {
+            width: 50%;
+            float: left;
+            padding: 40px;
+        }
+        
+        .box {
+            padding: 20px;
+            background-color: rgb(229, 205, 236);
+        }
+        
+        .text-box {
+            padding: 0;
+        }
+        
+        .text-box .left {
+            float: left;
+        }
+        
+        .text-box .right {
+            float: right;
+        }
+        
+        table thead th {
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+        }
+        
+        .tdr {
+            width: 60%;
+            height: 150px;
+        }
+        
+        .btn {
+            background-color: rgb(149, 0, 194);
+            box-shadow: none;
+            border: none;
+            border-radius: 10px 10px 10px;
+        }
+    </style>
+
+</head>
+
+<body style="min-height: 100vh; background-color: #fcfcfc;">
+    <nav class="navbar">
+        <div class="site">
+            <h4>Rafly.com</h4>
+        </div>
+        <div class="ancor">
+            <div class="link">
+                <a href="#">Home</a>
+            </div>
+            <div class="link">
+                <a href="">Generate Link</a>
+            </div>
+            <div class="link">
+                <a href="">Transaction History</a>
+            </div>
+        </div>
+        <div class="cart">
+            <img src="searrch2.png" width="20px">
+            <img src="cart.png" width="20px" class="carts">
+            <p> </p>
+            <p> Cart (1)</p>
+        </div>
+    </nav>
+
+
+    <div style="clear: both;"></div>
+
+    <section class="side">
+        <article>
+            <header>
+                <h2>You Cart</h2>
+            </header>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>
+                            <label for="quantity">Quantity</label>
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="tdr"><img src="hardisk.png" width="100px"></td>
+                        <td>$20.00</td>
+                        <td>
+                            <select id="quantity">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="text-align:right; border-top:1px solid;">Subtotal : $20.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </section>
+
+
+    <section class="side">
+        <article class="box">
+            <header>
+                <h3>Summary (1 Item)</h3>
+            </header>
+            <div class="text-box">
+                <p class="left">Subtotal</p>
+                <p class="right">$20.00</p>
+                <div style="clear: both;"></div>
+            </div>
+            <div class="text-box">
+                <p class="left">Shipping</p>
+                <p class="right">-</p>
+                <div style="clear: both;"></div>
+            </div>
+            <div class="text-box">
+                <p class="left">Est. Taxes</p>
+                <p class="right">-</p>
+                <div style="clear: both;"></div>
+            </div>
+
+            <hr>
+
+            <div class="text-box">
+                <p class="left">Total</p>
+                <p class="right">$20.00</p>
+                <div style="clear: both;"></div>
+            </div>
+            <div style="text-align: right;">
+                <button type="submit" class="btn"><a href="mandiri2.html">Checkout</a></button>
+            </div>
+        </article>
+    </section>
+    <div style="clear: both;"></div>
+
+    <footer style="width: 100%; padding-right: 20px;padding-bottom: 20px;            background-color: rgb(149, 0, 194);
+    ;">
+        <div style="float: left;">
+            <h3 style="float: left;">
+                <a href="#">Raphzone</a>
+            </h3>
+
+            <ul style="margin: 0; padding: 10px;">
+                <li style="float: left;">
+                    <a href="#">Category 1</a>
+                </li>
+                <li style="float: left;">
+                    <a href="#">Category 2</a>
+                </li>
+                <li style="float: left;">
+                    <a href="#">Category 3</a>
+                </li>
+            </ul>
+        </div>
+        <div style="float: right; text-align: right; color: white;">
+            <h3>Stay in Touch! Join our Newsletter</h3>
+            <input type="email" id="mail" name="email" placeholder="Enter Email">
+            <button>Subscribe</button>
+        </div>
+        <div style="clear: both;"></div>
+    </footer>
+
+</body>
+
+</html>
